@@ -39,12 +39,12 @@ Full list: [ufw_commands_task4.txt]
 
 Highlights:
 
-# sudo ufw enable
-# sudo ufw status numbered
-# sudo ufw deny 23
-# telnet localhost 23
-# sudo ufw allow 22
-# sudo ufw delete 1
+sudo ufw enable
+sudo ufw status numbered
+sudo ufw deny 23
+telnet localhost 23
+sudo ufw allow 22
+sudo ufw delete 23
 
 📷 Screenshots
 Visual proof of each step is available in the screenshots/ folder.
