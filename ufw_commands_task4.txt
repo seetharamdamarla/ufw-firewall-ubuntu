@@ -1,0 +1,37 @@
+🔥 Task 4: Firewall Configuration Using UFW on Ubuntu 22.04 🐧
+
+📜 Commands Used:
+
+1️⃣ Enable UFW Firewall
+   🔧 sudo ufw enable
+
+2️⃣ Check Current UFW Status and Rules
+   🔍 sudo ufw status numbered
+
+3️⃣ Block Incoming Traffic on Port 23 (Telnet) 🚫
+   🛡️ sudo ufw deny 23
+
+4️⃣ Check Rules After Adding the Block
+   📋 sudo ufw status numbered
+
+5️⃣ Install Telnet (for Testing) 🧪
+   📦 sudo apt install telnet
+
+6️⃣ Test Connection to Port 23
+   🧪 telnet localhost 23
+   ⚠️ (You should see a connection error — this confirms that port 23 is blocked.)
+
+7️⃣ Allow SSH Port (Optional but Recommended) ✅
+   🔓 sudo ufw allow 22
+
+8️⃣ Delete the Deny Rule on Port 23 (Clean-up) 🧹
+   ❌ sudo ufw delete deny 23
+   💡 (Or using rule number, e.g., rule 1: sudo ufw delete 1)
+
+9️⃣ Final Check of UFW Rules
+   🔍 sudo ufw status numbered
+
+📝 Notes:
+- 🧱 UFW (Uncomplicated Firewall) is a simplified frontend for managing iptables.
+- ❗ Port 23 (Telnet) is blocked as it's insecure and should not be exposed to the internet.
+- ✅ Port 22 (SSH) is allowed to ensure remote access remains functional.
